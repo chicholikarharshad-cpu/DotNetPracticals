@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "All Subject";
+}
+
+
+<div class="main">
+    <div class="courseDetails h-auto p-10 w-full border-2 rounded-lg">
+        <h1 class="underline text-3xl font-bold mb-10">Subjects</h1>
+        @foreach (var subject in ViewBag.subjects)
+        {
+            <li>@subject</li>
+        }
+
+    </div>
+</div>

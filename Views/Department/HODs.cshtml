@@ -1,0 +1,75 @@
+@{
+    ViewData["Title"] = "HODs";
+}
+
+@{
+    ViewData["Title"] = "Facultys";
+}
+
+
+<style>
+    .tableContainer {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        width: 100%;
+        padding: 0.5rem;
+        text-align: center;
+
+    }
+
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 0.5rem;
+    }
+
+    thead {
+        background-color: grey;
+        color: white;
+    }
+
+    tr:hover {
+        background-color: rgb(204, 204, 204);
+        color: white;
+
+    }
+</style>
+
+
+
+<h1 class="mt-10">All HODs</h1>
+<div class="tableContainer font-serif w-full min-h-screen max-h-full border-2 p-10 rounded-lg grid grid-cols-3 gap-2 bg-[#8BF5F5]">
+    
+    <table>
+        <thead>
+            <tr>
+                <td>Sr. No.</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Harshad</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Hemanshu</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Divyesh</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

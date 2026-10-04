@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practicalsAsProject</title>
+
+    <!-- 1. Tailwind CSS v4 Browser Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@@tailwindcss/browser@4"></script>
+
+    <!-- Default ASP.NET Core site styles -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/practicalsAsProject.styles.css" asp-append-version="true" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col justify-between m-10 font-sans">
+
+    <!-- Header & Navbar -->
+    <header>
+        <nav class="bg-zinc-800 text-white w-full h-20 flex items-center justify-between px-6 py-3 shadow-md rounded-lg">
+            
+            
+            <a asp-action="Dashbord" asp-controller="Dashbord" class="image w-full h-full">
+            <div class="image w-full h-full">
+                <img src="/images/logo.png" alt="LOGO" class="w-100% h-full rounded-lg">
+            </div>
+            </a>
+
+
+
+            
+
+        </nav>
+    </header>
+
+    <!-- Main Content Body Container -->
+    <div class="max-w-7xl mx-auto w-full flex-grow">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <!-- Essential Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

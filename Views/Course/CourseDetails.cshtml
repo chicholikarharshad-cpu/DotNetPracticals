@@ -1,0 +1,20 @@
+@using System.Security.Cryptography
+@{
+    ViewData["Title"] = "Course Details";
+    var course = ViewBag.course;
+}
+
+
+   <div class="main">
+        <strong>Your Course @ViewBag.course.courseName</strong>
+        <div class="courseDetails h-auto p-10 w-full border-2 rounded-lg">
+            <h1 class="underline text-3xl font-bold mb-10">Course Detail</h1>
+            <div class="courseName">Course Name :- @ViewBag.course.courseFullName</div>
+            <div class="courseName">Course Durations :- @ViewBag.course.duration</div>
+            <div class="courseName">Course Fees :- @ViewBag.course.fees</div>
+            <div class="courseName">Course Eligiblity :- @ViewBag.course.eligibility</div>
+            <div class="courseName">Course Mode :- @ViewBag.course.mode</div>
+        </div>
+    </div>
+
+    

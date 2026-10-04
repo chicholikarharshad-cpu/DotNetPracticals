@@ -1,0 +1,81 @@
+@using Microsoft.AspNetCore.Components.Forms
+@{
+    ViewData["Title"] = "Attandance";
+}
+
+
+
+
+<div
+    class="main font-serif w-full max-h-screen min-h-full border-2 mt-10 p-10 rounded-lg grid grid-cols-3 gap-2 bg-[#8BF5F5]">
+
+    
+    
+    <a asp-action="DailyAttandance" asp-controller="Attandance">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/DailyAttandance.png" alt="Daily" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Daily Attandance</div>
+            </div>
+        </div>
+    </a>
+
+
+
+    <a asp-action="MonAttandance" asp-controller="Attandance">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/course.png" alt="Courses" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Show Monthly Attandance</div>
+            </div>
+        </div>
+    </a>
+
+
+    <a asp-action="Absent" asp-controller="Attandance">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/absent.png" alt="Absent" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Absent</div>
+                <div class="lengthOfStudent text-4xl font-bold">129</div>
+            </div>
+        </div>
+    </a>
+
+
+
+    <a asp-action="Present" asp-controller="Attandance">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/present.png" alt="Present" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Present</div>
+                <div class="lengthOfStudent text-4xl font-bold">24</div>
+            </div>
+        </div>
+    </a>
+
+
+
+
+
+</div>

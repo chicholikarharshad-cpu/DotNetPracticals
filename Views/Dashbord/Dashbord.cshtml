@@ -1,0 +1,201 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+
+</style>
+
+
+
+<div
+    class="main font-serif w-full max-h-full min-h-screen border-2 mt-10 p-10 rounded-lg grid grid-cols-3 gap-2 bg-[#8BF5F5]">
+
+    
+    <a asp-action="Students" asp-controller="Student">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/student.png" alt="Student" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Students</div>
+                <div class="lengthOfStudent text-4xl font-bold">129</div>
+            </div>
+        </div>
+    </a>
+
+
+
+    <a asp-action="Courses" asp-controller="Course">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/course.png" alt="Courses" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Courses</div>
+                <div class="lengthOfStudent text-4xl font-bold">27</div>
+            </div>
+        </div>
+    </a>
+
+
+
+    <a asp-action="Departments" asp-controller="Department">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/department.png" alt="Departments" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Departments</div>
+                <div class="lengthOfStudent text-4xl font-bold">24</div>
+            </div>
+        </div>
+    </a>
+
+
+    <a asp-action="Attandances" asp-controller="Attandance">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/attandance.png" alt="Attandances" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Attandances</div>
+                <div class="lengthOfStudent text-4xl font-bold">27</div>
+            </div>
+        </div>
+    </a>
+
+    
+
+    
+
+    <a asp-action="Results" asp-controller="Result">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/result.png" alt="Results" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Results</div>
+                <div class="lengthOfStudent text-4xl font-bold">27</div>
+            </div>
+        </div>
+    </a>
+
+
+
+
+    <a asp-action="Contacts" asp-controller="Contact">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/contact.png" alt="Contacts" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Contacts</div>
+            </div>
+        </div>
+    </a>
+
+
+    <a asp-action="Facultys" asp-controller="Faculty">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/faculty.png" alt="Faculty" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Facultys</div>
+                <div class="lengthOfStudent text-4xl font-bold">57</div>
+            </div>
+        </div>
+    </a>
+
+
+
+    <a asp-action="Events" asp-controller="Event">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/events.png" alt="Events" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Events</div>
+                <div class="lengthOfStudent text-4xl font-bold">7</div>
+            </div>
+        </div>
+    </a>
+
+
+    <a asp-action="Notices" asp-controller="Notice">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/notice.png" alt="Notices" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Notices</div>
+                <div class="lengthOfStudent text-4xl font-bold">117</div>
+            </div>
+        </div>
+    </a>
+
+
+
+    <a asp-action="Library" asp-controller="Library">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/library.png" alt="Librarys" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Librarys</div>
+            </div>
+        </div>
+    </a>
+
+
+
+
+    <a asp-action="Feedback" asp-controller="Feedback">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/feedback.png" alt="Feedback" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Feedback</div>
+                <div class="lengthOfStudent text-4xl font-bold">117</div>
+            </div>
+        </div>
+    </a>
+
+
+
+</div>

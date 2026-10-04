@@ -1,0 +1,28 @@
+@{
+    ViewData["Title"] = "ID Card";
+}
+
+
+
+
+<div class="IdCardBox IdCardBox-2">
+    <div class="IdCard w-full h-auto border-2 rounded-lg p-10 flex gap-5">
+        <div class="image-container w-60 shrink-0">
+            <img src="@ViewBag.user.PassportPhoto" alt="" class="rounded-full w-60 object-cover">
+        </div>
+
+        <div class="detais-container flex flex-col gap-4">
+            <div class="text-2xl">Name :- @ViewBag.user.FullName</div>
+            <div class="text-2xl">Enrollment Number :- @ViewBag.user.RollNumber</div>
+            <span class="text-2xl mr-10">Course :- @ViewBag.user.Course</span>
+            <span class="text-2xl mr-10">Semester :- @ViewBag.user.Semester</span>
+            <span class="text-2xl mr-10">Class :- @ViewBag.user.Class</span>
+            <div class="flex items-center gap-2">
+                <img src="@ViewBag.user.CollegeIconImage" alt="Collage" class="rounded-full w-15">
+                <span class="text-2xl">Collage Name :- @ViewBag.user.CollegeName</span>
+            </div>
+            <span class="text-2xl mr-10">Emergency Number :- @ViewBag.user.EmergencyNumber</span>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+@{
+    ViewData["Title"] = "Contacts";
+}
+
+
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+
+</style>
+
+
+
+<div
+    class="main font-serif w-full max-h-screen min-h-full border-2 mt-10 p-10 rounded-lg grid grid-cols-3 gap-2 bg-[#8BF5F5]">
+
+    
+    <a asp-action="Contact" asp-controller="Contact">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/contact.png" alt="Contact" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Contact</div>
+            </div>
+        </div>
+    </a>
+
+
+
+    <a asp-action="Location" asp-controller="Contact">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/location.png" alt="Location" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Locations</div>
+            </div>
+        </div>
+    </a>
+
+
+
+    <a asp-action="OfficeTime" asp-controller="Contact">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/officeTime.png" alt="OfficeTime" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Office Time</div>
+            </div>
+        </div>
+    </a>
+
+
+    <a asp-action="Helps" asp-controller="Contact">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/help.png" alt="Helps" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Helps</div>
+            </div>
+        </div>
+    </a>
+
+    
+
+
+</div>

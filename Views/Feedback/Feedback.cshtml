@@ -1,0 +1,56 @@
+@{
+    ViewData["Title"] = "Feedback";
+}
+
+
+<style>
+    form input,
+    form textarea {
+        background-color: aqua;
+        padding: 0.5rem;
+        border: 1px solid black;
+        outline: 0;
+        border-radius: 0.5rem;
+    }
+</style>
+<h1 class="mt-10 underline text-3xl">Feedback form</h1>
+<div class="main">
+    <form asp-controller="Feedback" asp-action="FormSubmit" method="post" class="flex flex-col gap-2">
+        <input type="text" class="Name" placeholder="Enter your name">
+        <input type="email" class="Email" placeholder="Enter your email">
+        <textarea name="FeedbackText" id="feedbackText" class="h-43 w-full resize-none"
+                  placeholder="Enter your feedback...."></textarea>
+        <input type="range" name="Range" id="range">
+        <input type="submit" value="Submit" class="cursor-pointer">
+    </form>
+</div>
+
+
+
+
+
+<div
+    class="main font-serif w-full max-h-screen min-h-full border-2 mt-10 p-10 rounded-lg grid grid-cols-3 gap-2 bg-[#8BF5F5]">
+
+    
+    <a asp-action="TotalFeedback" asp-controller="Feedback">
+
+        <div
+            class="hover:bg-[#70E5E5] hover:shadow-lg hover:scale-105 transition duration-300 border-1 bg-[#B9FAFA] w-full h-50 p-5 grid grid-cols-[35%_65%] gap-2 items-center justify-center rounded-lg">
+            <div class="w-full h-full grid-1">
+                <img src="/images/feedback.png" alt="Feedbacks" class="w-full h-full object-cover rounded">
+            </div>
+
+            <div class="text">
+                <div class="title text-4xl font-bold border-b-4">Feedbacks</div>
+                <div class="lengthOfStudent text-4xl font-bold">129</div>
+            </div>
+        </div>
+    </a>
+
+
+
+
+
+
+</div>

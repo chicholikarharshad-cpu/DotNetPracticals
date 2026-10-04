@@ -1,0 +1,75 @@
+@{
+    ViewData["Title"] = "Departments";
+}
+
+
+<style>
+    .tableContainer {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        width: 75%;
+        padding: 0.5rem;
+        text-align: center;
+
+    }
+
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 0.5rem;
+    }
+
+    thead {
+        background-color: grey;
+        color: white;
+    }
+
+    tr:hover {
+        background-color: rgb(204, 204, 204);
+        color: white;
+
+    }
+</style>
+
+
+
+<div
+    class="tableContainer font-serif w-full min-h-screen max-h-full border-2 mt-10 p-10 rounded-lg grid grid-cols-3 gap-2 bg-[#8BF5F5]">
+    
+    <table>
+        <thead>
+            <tr>
+                <td>Sr. No.</td>
+                <td>Department Name</td>
+                <td>Options</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            @{
+                @foreach (var department in ViewBag.departments)
+                {
+
+                    <tr>
+                        <td>@department.DeptId</td>
+                        <td>@department.DeptName</td>
+                        <td>
+                            <a asp-asp-controller="Department" asp-action="Facultys" class="text-purple-600 hover:text-purple-800">Facultys</a> |
+                            <a asp-asp-controller="Department" asp-action="HODs" class="text-yellow-600 hover:text-yellow-800">HOD</a> |
+                            <a asp-asp-controller="Department" asp-action="Facilities" class="text-red-600 hover:text-red-800">Facilities</a>
+                        </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+    
+</div>

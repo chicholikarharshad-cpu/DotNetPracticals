@@ -1,0 +1,98 @@
+@{
+    ViewData["Title"] = "Events";
+}
+
+
+
+<style>
+    .tableContainer {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        width: 75%;
+        padding: 0.5rem;
+        text-align: center;
+
+    }
+
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 0.5rem;
+    }
+
+    thead {
+        background-color: grey;
+        color: white;
+    }
+
+    tr:hover {
+        background-color: rgb(204, 204, 204);
+        color: white;
+
+    }
+</style>
+
+
+
+
+<div
+    class="tableContainer font-serif w-full min-h-screen max-h-full border-2 mt-10 p-10 rounded-lg grid grid-cols-3 gap-2 bg-[#8BF5F5]">
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Events</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+
+            
+
+            <tr>
+                <td>1</td>
+                <td>AI & Machine Learning Bootcamp</td>
+                <td class="flex justify-center gap-2">
+
+
+
+                    <a asp-action="Details" asp-controller="Event" class="text-blue-600 hover:text-blue-800 action-btn">
+                        <p>Details</p>
+                    </a>
+
+                    |
+
+                    <a asp-action="Calendar" asp-controller="Event"
+                       class="text-yellow-600 hover:text-yellow-800 action-btn">
+                        <p>Calendar</p>
+                    </a>
+
+                    |
+
+                        
+                    <input type="submit" value="Apply"
+                           class="bg-blue-500 px-2 py-1 text-white rounded-md cursor-pointer">
+                    @* <a asp-action="Registration" asp-controller="Event" class="text-red-600 hover:text-red-800 action-btn">
+                            <p>Regitration</p>
+                        </a> *@
+
+                        
+
+                            
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>

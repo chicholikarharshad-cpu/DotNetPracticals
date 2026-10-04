@@ -1,0 +1,99 @@
+@{
+    ViewData["Title"] = "Grades";
+
+}
+
+
+@{
+    ViewData["Title"] = "Marksheet";
+
+
+}
+
+
+
+<style>
+    .tableContainer {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        width: 75%;
+        padding: 0.5rem;
+        text-align: center;
+
+    }
+
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 0.5rem;
+    }
+
+    thead {
+        background-color: grey;
+        color: white;
+    }
+
+    tr:hover {
+        background-color: rgb(204, 204, 204);
+        color: white;
+
+    }
+</style>
+
+
+
+
+<div class="main">
+    <div class="tableContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>Letter Grade</th>
+                    <th>Grade Points</th>
+                    <th>Percentage Range</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>A+</td>
+                    <td>4.0</td>
+                    <td>90-100%</td>
+                    <td>Outstanding</td>
+                </tr>
+
+                <tr>
+                    <td>A</td>
+                    <td>3.7</td>
+                    <td>85-89%</td>
+                    <td>Ecellent</td>
+                </tr>
+
+                <tr>
+                    <td>B+</td>
+                    <td>3.3</td>
+                    <td>80-84%</td>
+                    <td>Very Good</td>
+                </tr>
+
+                <tr>
+                    <td>C</td>
+                    <td>2.0</td>
+                    <td>60-69%</td>
+                    <td>Avrage</td>
+                </tr>
+
+                
+
+            </tbody>
+        </table>
+    </div>
+</div>

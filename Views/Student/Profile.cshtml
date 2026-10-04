@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Student Profile";
+}
+
+@{
+
+    
+    <h1 class="text-4xl mt-10 underline font-bold">Hello @ViewBag.user.FullName Welcome To Your Profile</h1>
+    <div class="profileBox profileBox-2">
+
+            <div class="profile w-1/2 border-3 rounded-lg p-5 bg-#8BF5F5 min-h-screen flex flex-col">
+                <div class="imageBox w-80 h-80 overflow-hidden rounded-lg border-4 shadow-2xl mx-auto items-center">
+                    <img src="@ViewBag.user.PassportPhoto" alt="" class="w-full object-contain object-center">
+                </div>
+                <div class="details">
+                    <h1 class="underline text-3xl mt-15 mb-10 font-extrabold">Student Details</h1>
+                    <div class="text-2xl">Name :- @ViewBag.user.FullName.</div>
+                    <div class="text-2xl">Date Of Birth :- @ViewBag.user.DOB.</div>
+                    <div class="text-2xl">Gender :- @ViewBag.user.Gender.</div>
+                    <div class="text-2xl">Email :- @ViewBag.user.Email</div>
+                    <div class="text-2xl">Phone Number :- @ViewBag.user.PhoneNumber</div>
+                    <div class="text-2xl">Address :- @ViewBag.user.PermanentAddress</div>
+                    <div class="text-2xl">Hobbies :- @ViewBag.user.Hobbies</div>
+                    <div class="text-2xl">Emergency Name :- @ViewBag.user.EmergencyName</div>
+                    <div class="text-2xl">Emergency Number :- @ViewBag.user.EmergencyNumber</div>
+
+
+                    <h1 class="underline text-3xl mt-15 mb-10 font-extrabold">Parent Details</h1>
+                    <div class="text-2xl">Parent Name :- @ViewBag.user.ParentName</div>
+                    <div class="text-2xl">Parent Contact Number :- @ViewBag.user.ParentContactNumber</div>
+                </div>
+            </div>
+        
+
+    </div>
+}

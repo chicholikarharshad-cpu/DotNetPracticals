@@ -1,0 +1,25 @@
+@using Microsoft.AspNetCore.Components.Forms
+@{
+    ViewData["Title"] = "Attandance";
+}
+
+
+
+<div class="main w-full">
+    <form asp-asp-controller="Attandance" asp-action="ShowMassage" method="post" class="flex flex-col justify-center items-center">
+
+        <h1 class="underline text-3xl font-bold m-2 mb-5">Students Attandance</h1>
+        @foreach (var student in ViewBag.students)
+        {
+            <div class="border-b p-2 rounded-md border-t flex m-1 justify-between items-center w-1/2">
+                <div class="inline-block">@student.FullName</div>
+                <input type="checkBox" class="p-2"/>
+            </div>
+        }
+
+        <button type="submit" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+            Submit Attendance
+        </button>
+    </form>
+</div>
+

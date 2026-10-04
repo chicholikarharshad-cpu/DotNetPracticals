@@ -1,0 +1,95 @@
+@{
+    ViewData["Title"] = "Library";
+}
+
+
+
+<style>
+    .tableContainer {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        width: 75%;
+        padding: 0.5rem;
+        text-align: center;
+
+    }
+
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 0.5rem;
+    }
+
+    thead {
+        background-color: grey;
+        color: white;
+    }
+
+    tr:hover {
+        background-color: rgb(204, 204, 204);
+        color: white;
+
+    }
+</style>
+
+<div class="main">
+    <h1 class="text-3xl underline font-bold mb-10">All Books</h1>
+
+    <div class="tableContainer">
+        <table>
+
+
+            <thead>
+                <tr>
+    
+                    <th>Sr. No.</th>
+                    <th>Book Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                        <td>1</td>
+                        <td>JAVA</td>
+                        <td>
+                    <a asp-controller="Library" asp-action="Details" asp-route-id="1">Details</a>
+                </td>
+                </tr>
+
+
+                 <tr>
+                        <td>2</td>
+                        <td>Dotnet</td>
+                        <td>
+                    <a asp-controller="Library" asp-action="Details" asp-route-id="2">Details</a>
+                </td>
+                </tr>
+
+
+                
+                <tr>
+                        <td>3</td>
+                        <td>Python</td>
+                        <td>
+                    <a asp-controller="Library" asp-action="Details" asp-route-id="3">Details</a>
+                </td>
+                </tr>
+
+
+                
+                
+            </tbody>
+
+
+        </table>
+
+    </div>
+</div>
