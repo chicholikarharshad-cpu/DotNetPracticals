@@ -1,10 +1,51 @@
 @{
-    ViewData["Title"] = "All Time Tables";
+    ViewData["Title"] = "TimeTable";
 }
 
+<div class="main p-6 max-w-5xl mx-auto">
+    <h2 class="text-xl font-bold text-gray-800 mb-4">College Time Table</h2>
 
-   <div class="main">
-        <div class="courseDetails h-auto p-10 w-full border-2 rounded-lg">
-            <h1>This is a Time Table Page....</h1>
-        </div>
+    <div class="bg-white border rounded shadow overflow-hidden">
+        <table class="w-full text-left border-collapse">
+            <thead>
+                <tr class="bg-gray-100 border-b text-gray-700 text-sm">
+                    <th class="p-3">Day</th>
+                    <th class="p-3">Time</th>
+                    <th class="p-3">Course</th>
+                    <th class="p-3">Subject</th>
+                    <th class="p-3">Faculty</th>
+                    <th class="p-3">Room</th>
+                </tr>
+            </thead>
+            <tbody class="text-sm text-gray-600 divide-y">
+                <!-- Row 1 -->
+                <tr class="hover:bg-gray-50">
+                    <td class="p-3 font-medium text-gray-900">Monday</td>
+                    <td class="p-3">09:00 AM - 10:00 AM</td>
+                    <td class="p-3">B.Tech CSE (Sem 5)</td>
+                    <td class="p-3 text-blue-600 font-medium">ASP.NET Core</td>
+                    <td class="p-3">Dr. Sharma</td>
+                    <td class="p-3">Room 302</td>
+                </tr>
+                <!-- Row 2 -->
+                <tr class="hover:bg-gray-50">
+                    <td class="p-3 font-medium text-gray-900">Tuesday</td>
+                    <td class="p-3">10:15 AM - 11:15 AM</td>
+                    <td class="p-3">B.Tech CSE (Sem 5)</td>
+                    <td class="p-3 text-blue-600 font-medium">Mobile App Dev</td>
+                    <td class="p-3">Prof. Verma</td>
+                    <td class="p-3">Room 304</td>
+                </tr>
+                <!-- Row 3 -->
+                <tr class="hover:bg-gray-50">
+                    <td class="p-3 font-medium text-gray-900">Wednesday</td>
+                    <td class="p-3">12:00 PM - 01:00 PM</td>
+                    <td class="p-3">BCA (Sem 3)</td>
+                    <td class="p-3 text-blue-600 font-medium">Data Structures</td>
+                    <td class="p-3">Dr. Gupta</td>
+                    <td class="p-3">Room 101</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+</div>

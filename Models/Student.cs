@@ -1,4 +1,6 @@
 namespace practicalsAsProject.Models;
+using System;
+using System.ComponentModel.DataAnnotations;
 
 public class Student
 {
@@ -16,7 +18,6 @@ public class Student
     public string Profile { get; set; }
     public string Hobbies { get; set; }
     public string Class { get; set; } 
-        
     public int CourseId { get; set; }
     public Course Course {get;set;}
     public int DeparmentId { get; set; }
