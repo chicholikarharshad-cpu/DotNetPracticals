@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 namespace practicalsAsProject.Models;
     public class Notice
     {
-        public int NoticeId { get; set; }   // Primary Key
+        public int NoticeId { get; set; }   
 
         [Required(ErrorMessage = "Title is required")]
         [StringLength(200)]
